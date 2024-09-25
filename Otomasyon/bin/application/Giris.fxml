@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="838.0" style="-fx-background-color: #ffbd59;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GirisController">
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="465.0" layoutX="6.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@GİRİS.png" />
+         </image>
+      </ImageView>
+      <SplitPane dividerPositions="0.48372093023255813" layoutX="481.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="647.0" prefWidth="353.0" style="-fx-background-color: GRAY;">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="271.0" prefWidth="351.0" style="-fx-background-color: GRAY;">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="157.0" text="  ÇALIŞAN GİRİŞİ  " textFill="#2874a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="AdminSifre" layoutX="51.0" layoutY="125.0" prefHeight="35.0" prefWidth="211.0" promptText="SİFRE...">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <TextField fx:id="AdminAd" layoutX="51.0" layoutY="66.0" promptText="KULLANICI ADI">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="girisAdmin" layoutX="93.0" layoutY="219.0" mnemonicParsing="false" onAction="#girisAdmin_click" prefHeight="60.0" prefWidth="128.0" style="-fx-background-color: #5186dc;" text="GİRİS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelSonuc" layoutX="51.0" layoutY="184.0" prefHeight="35.0" prefWidth="211.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="173.0" text="  YÖNETİCİ GİRİŞİ  " textFill="#2874a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="YoneticiAd" layoutX="58.0" layoutY="68.0" promptText="KULLANICI ADI">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="YoneticiSifre" layoutX="60.0" layoutY="124.0" prefHeight="35.0" prefWidth="211.0" promptText="SİFRE...">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="girisYonetici" layoutX="100.0" layoutY="214.0" mnemonicParsing="false" onAction="#girisYonetici_click" prefHeight="60.0" prefWidth="128.0" style="-fx-background-color: #5186dc;" text="GİRİS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelSonuc1" layoutX="60.0" layoutY="173.0" prefHeight="35.0" prefWidth="211.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

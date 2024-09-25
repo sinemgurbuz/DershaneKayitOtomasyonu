@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="482.0" prefWidth="1014.0" style="-fx-background-color: #ffbd59;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnasayfaController">
+   <children>
+      <Button fx:id="ogr_bilgi" layoutX="356.0" layoutY="162.0" mnemonicParsing="false" onAction="#ogr_bilgi_Click" prefHeight="95.0" prefWidth="270.0" style="-fx-background-color: GRAY;" text="ÖĞRENCİ BİLGİLERİ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="dersProgramı" layoutX="724.0" layoutY="29.0" mnemonicParsing="false" onAction="#dersProgramı_Click" prefHeight="95.0" prefWidth="249.0" style="-fx-background-color: gray;" text="DERS PROĞRAMI">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="ögrt_bilgi" layoutX="724.0" layoutY="162.0" mnemonicParsing="false" onAction="#ögrt_bilgi_Click" prefHeight="95.0" prefWidth="249.0" style="-fx-background-color: gray;" text="ÖĞRETMEN BİLGİLERİ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="odemeler" layoutX="724.0" layoutY="296.0" mnemonicParsing="false" onAction="#odemeler_Click" prefHeight="85.0" prefWidth="249.0" style="-fx-background-color: GRAY;" text="ÖĞRENCİ ÖDEMELERİ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCıkıs" layoutX="8.0" layoutY="18.0" mnemonicParsing="false" onAction="#btnCıkıs_Click" style="-fx-background-color: gray;" text="ÇIKIŞ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="374.0" fitWidth="425.0" layoutX="-18.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@anasayfa.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button_sifre" layoutX="356.0" layoutY="296.0" mnemonicParsing="false" onAction="#button_sifre_click" prefHeight="85.0" prefWidth="270.0" style="-fx-background-color: GRAY;" text="ŞİFRE DEĞİŞTİR">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="button_devamsızlık" layoutX="356.0" layoutY="35.0" mnemonicParsing="false" onAction="#button_devamsızlık_click" prefHeight="95.0" prefWidth="270.0" style="-fx-background-color: gray;" text="DEVAMSIZLIK">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
